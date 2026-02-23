@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 700;
+}
+
+#camada1 {
+  background-color: rgb(0, 47, 255);
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  left: 220px;
+  top: 10px;
+}
+
+#camada2 {
+  background-color: rgb(255, 0, 0);
+  width: 800px;
+  height: 100px;
+  position: absolute;
+  left: 500px;
+  top: 10px;
+}
+
+#camada3 {
+  background-color: rgb(0, 255, 0);
+  width: 1080px;
+  height: 50px;
+  position: absolute;
+  left: 220px;
+  top: 110px;
+}
+
+#camada4 {
+  background-color: rgb(255, 255, 0);
+  width: 1080px;
+  height: 500px;
+  position: absolute;
+  border: 10px solid red;
+  left: 220px;
+  top: 160px;
+}
+
+#camada5 {
+  background-color: rgb(127, 127, 127);
+  width: 1080px;
+  height: 50px;
+  position: absolute;
+  left: 220px;
+  top: 660px;
+}
