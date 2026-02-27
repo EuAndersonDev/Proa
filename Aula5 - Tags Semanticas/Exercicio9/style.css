@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+main{
+    position: relative;
+    width: 90%;
+    height: 100vh;
+    background-color: antiquewhite;
+    margin: auto;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+.left{
+    position: relative;
+    width: 30%;
+    height: 70vh;
+    background-color: rgb(0, 255, 0);
+    float: left;
+}
+
+nav{
+    position: relative;
+    width: 80%;
+    height: 30vh;
+    margin: auto;
+    margin-top: 15px;
+    background-color: rgb(255, 255, 0);
+    clear: left;
+}
+
+aside{
+    position: relative;
+    width: 80%;
+    height: 30vh;
+    margin: auto;
+    margin-top: 15px;
+    background-color: rgb(255, 0, 255);
+    clear: left;
+}
+
+.right{
+    position: relative;
+    width: 70%;
+    height: 70vh;
+    background-color: rgb(0, 0, 255);
+    float: left;
+}
+
+article{
+    position: relative;
+    width: 95%;
+    height: 96%;
+    margin: 0 auto;
+    background-color: rgb(0, 255, 255);
+}
+
+article h1{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(236, 232, 109);
+    text-align: center;
+    margin: auto;
+}
+
+article p{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(214, 212, 105);
+    text-align: center;
+    margin: auto;
+}
+article div{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(215, 213, 106);
+    text-align: center;
+    margin: auto;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(88, 38, 38);
+    text-align: center;
+    clear: left;
+    color: white;
+}
+
