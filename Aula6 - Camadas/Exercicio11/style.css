@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar {
+  background-color: #555;
+  color: #fff;
+  text-align: left;
+  height: 25%;
+  width: 100%;
+  position: relative;
+}
+
+main {
+  display: flex;
+  height: 70vh;
+  position: relative;
+  width: 100%;
+  flex-direction: row;
+}
+
+.left {
+  background-color: #777;
+  color: #fff;
+  text-align: left;
+  width: 15%;
+  height: 100%;
+}
+
+section {
+  background-color: #ff00c8;
+  color: #fff;
+  text-align: center;
+  width: 70%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerSec {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  width: 100%;
+  height: 10%;
+  margin-bottom: 10px;
+}
+
+.hero {
+  background-color: #633a2a;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 30%;
+}
+
+p {
+  background-color: #99579a;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 20%;
+  margin-top: 10px;
+}
+
+.cards-container {
+  display: flex;
+    justify-content: space-between;
+  margin-top: 10px;
+  flex-direction: row;
+  height: 25%;
+}
+
+.card{
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    width: 30%;
+    height: 100%;
+}
+
+.right {
+  background-color: #777;
+  color: #fff;
+  text-align: left;
+  width: 15%;
+  height: 100%;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 10vh;
+}
