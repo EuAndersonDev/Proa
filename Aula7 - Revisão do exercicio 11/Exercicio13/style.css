@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body{
+    font-family: Inter, sans-serif;
+    background-color: gray;
+}
+
+main{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+}
+
+header{
+    background-color: lime;
+    color: #fff;
+    text-align: center;
+    height: 200px;
+}
+
+.about{
+    background-color: red;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.aboutCard{
+    background-color: #000;
+    width: 40%;
+    height: 80%;
+}
+
+.products{
+    background-color: #fff;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cardProducts{
+    background-color: #000;
+    width: 20%;
+    height: 90%;
+}
+
+.location{
+    background-color: orange;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.locationCard{
+    background-color: #000;
+    width: 40%;
+    height: 80%;
+}
+
+.contacts{
+    background-color: #fff;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contactCard{
+    background-color: #000;
+    width: 40%;
+    height: 80%;
+}
+
+footer{
+    background-color: lime;
+    color: #fff;
+    text-align: center;
+    height: 200px;
+    margin-top: 10px;
+}
