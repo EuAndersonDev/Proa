@@ -1,42 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercicio 13</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main>
-        <header>
-            <h1>Exercicio 13</h1>
-        </header>
-        <section class="about">
-            <div class="aboutCard"></div>
-            <div class="aboutCard"></div>
-        </section>
-    
-        <section class="products">
-            <div class="cardProducts"></div>
-            <div class="cardProducts"></div>
-            <div class="cardProducts"></div>
-            <div class="cardProducts"></div>
-        </section>
-    
-        <section class="location">
-            <div class="locationCard"></div>
-            <div class="locationCard"></div>
-        </section>
-    
-        <section class="contacts">
-            <div class="contactCard"></div>
-            <div class="contactCard"></div>
-        </section>
-        <footer>
-            <h1>Footer</h1>
-        </footer>
-    </main>
+      <header>
+        <nav>
+          <a href="#" class="links">Home</a>
+          <a href="#about" class="links">Sobre</a>
+          <a href="#products" class="links">Produtos</a>
+          <a href="#location" class="links">Localização</a>
+          <a href="#contacts" class="links">Contatos</a>
+        </nav>
+      </header>
+      <section id="about">
+        <div id="aboutCardText">
+          <h1>Nossa Loja - Instrumentos</h1>
+          <br />
+          <p>
+            Bem-vindo à nossa loja de instrumentos musicais! Aqui você encontra
+            uma ampla seleção de guitarras, baixos e outros instrumentos de
+            música de alta qualidade. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Natus aperiam eius, esse, optio temporibus veniam,
+            modi maxime non blanditiis voluptates possimus. Ratione ut,
+            cupiditate neque non libero voluptas explicabo illum. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Officiis corrupti et
+            dolores ratione modi, quae vel. Laborum inventore fuga, explicabo
+            dicta temporibus eius molestias maiores facilis odit numquam
+            recusandae libero!
+          </p>
+        </div>
+        <div id="aboutCardImage"></div>
+      </section>
 
-</body>
+      <section id="products">
+        <div class="cardProducts">
+          <img
+            src="./Atividade5_imagens/imagens/guitarrinha.jpg"
+            alt="Guitarrinha"
+          />
+          <div class="text">
+            <p>VIOLAÃO CLASSICO C70</p>
+            <p>NYLON ACUSTICO NAATURAL</p>
+            <p>BRILHANTE</p>
+            <strong>R$ 999,99</strong>
+          </div>
+        </div>
+        <div class="cardProducts">
+          <img
+            src="./Atividade5_imagens/imagens/guitarrinha.jpg"
+            alt="Guitarrinha"
+          />
+          <div class="text">
+            <p>VIOLAÃO CLASSICO C70</p>
+            <p>NYLON ACUSTICO NAATURAL</p>
+            <p>BRILHANTE</p>
+            <strong>R$ 999,99</strong>
+          </div>
+        </div>
+        <div class="cardProducts">
+          <img
+            src="./Atividade5_imagens/imagens/guitarrinha.jpg"
+            alt="Guitarrinha"
+          />
+          <div class="text">
+            <p>VIOLAÃO CLASSICO C70</p>
+            <p>NYLON ACUSTICO NAATURAL</p>
+            <p>BRILHANTE</p>
+            <strong>R$ 999,99</strong>
+          </div>
+        </div>
+        <div class="cardProducts">
+          <img
+            src="./Atividade5_imagens/imagens/guitarrinha.jpg"
+            alt="Guitarrinha"
+          />
+          <div class="text">
+            <p>VIOLAÃO CLASSICO C70</p>
+            <p>NYLON ACUSTICO NAATURAL</p>
+            <p>BRILHANTE</p>
+            <strong>R$ 999,99</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="location">
+        <div class="locationMap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.122782716492!2d-46.6917602!3d-23.528085899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1772759068187!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="locationInfo">
+          <h2>Nossa Loja - Instrumentos Musicais</h2>
+          <p>
+            Está situada na Rua Tib, 54 - Pompéia, próximo ao teatro Cacilda
+            Becker, em um prédio antigo em construção do século XIX, numa área
+            de 500m2, com uma variada gama de instrumentos, em um ambiente
+            agradável para toda a família!
+          </p>
+        </div>
+      </section>
+
+      <section id="contacts">
+        <div class="contactForm">
+          <form>
+            <label>Entre com o seu nome:</label>
+            <input type="text" placeholder="Digite seu nome aqui" />
+            <label>Entre com o seu e-mail:</label>
+            <input type="email" placeholder="Digite seu e-mail aqui" />
+            <label>Sua dúvida ou sugestão:</label>
+            <textarea placeholder="Sua dúvida por favor aqui"></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+        <div class="contactSocial">
+          <h3>Acesse também nossas redes sociais:</h3>
+          <div class="socialIcons">
+            <a href="#" id="social-iconWhats">
+                <img src="./Atividade5_imagens/imagens/whats.png" alt="WhatsApp">
+            </a>
+            <a href="#" id="social-iconInsta">
+                <img src="./Atividade5_imagens/imagens/insta.png" alt="Instagram">
+            </a>
+            <a href="#" id="social-iconFace">
+                <img src="./Atividade5_imagens/imagens/face.png" alt="Facebook">
+            </a>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <h2>Nossa Loja - Instrumentos Musicais</h2>
+        <p>Rua Tib, 54 - Pompéia, próximo ao teatro Cacilda Becker</p>
+        <p>São Paulo - Brasil</p>
+        <div class="footerSocial">
+          <a href="#" id="footer-iconWhats">
+                <img src="./Atividade5_imagens/imagens/whats.png" alt="WhatsApp">
+            </a>
+            <a href="#" id="footer-iconInsta">
+                <img src="./Atividade5_imagens/imagens/insta.png" alt="Instagram">
+            </a>
+            <a href="#" id="footer-iconFace">
+                <img src="./Atividade5_imagens/imagens/face.png" alt="Facebook">
+            </a>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
