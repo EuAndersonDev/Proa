@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <h1>Reajuste de 1%</h1>
+    <script>
+        let saldo = parseFloat(prompt("Digite o saldo atual:"));
+        let reajuste = saldo * 0.01;
+        let novoSaldo = saldo + reajuste;
+        document.write("Saldo atual: R$ " + saldo.toFixed(2) + "<br>");
+        document.write("Reajuste de 1%: R$ " + reajuste.toFixed(2) + "<br>");
+        document.write("Novo saldo: R$ " + novoSaldo.toFixed(2) + "<br>");
+    </script>
+</body>
+</html>

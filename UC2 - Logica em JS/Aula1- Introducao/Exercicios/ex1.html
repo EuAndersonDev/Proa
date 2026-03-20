@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <h1>Dias de vida</h1>
+    <script>
+        const mes =30;
+        const ano = 365;
+        let idadeAnos = parseInt(prompt("Digite sua quantidade de anos:"));
+        let idadeMeses = parseInt(prompt("Digite quantos meses você tem:"));
+        let idadeDias = parseInt(prompt("Digite quantos dias você tem:"));
+        let dias = (idadeAnos * ano) + (idadeMeses * mes) + idadeDias;
+        document.write("Você já viveu " + dias + " dias.");
+    </script>
+</body>
+</html>

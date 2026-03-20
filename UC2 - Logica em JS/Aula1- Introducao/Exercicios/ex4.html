@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+    <h1>Acréscimo de valor</h1>
+    <script>
+    let IPI = parseFloat(prompt("Digite a porcentagem do IPI:"));
+
+    let c1 = parseFloat(prompt("Digite o codigo do produto1:"));
+    let v1 = parseFloat(prompt("Digite o valor do produto1:"));
+    let q1 = parseInt(prompt("Digite a quantidade do produto1:"));
+
+    let c2 = parseFloat(prompt("Digite o codigo do produto2:"));
+    let v2 = parseFloat(prompt("Digite o valor do produto2:"));
+    let q2 = parseInt(prompt("Digite a quantidade do produto2:"));
+
+    let acrescimo = (v1 * q1 + v2 * q2) * (IPI / 100 + 1);
+
+    document.write("Valor total com acréscimo: R$ " + acrescimo.toFixed(2));
+</script>
+</body>
+</html>
