@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional</title>
+</head>
+<body>
+    <h1>Condicional</h1>
+    <script>
+        let n1 = parseFloat(prompt("Digite um número:"));
+        document.write("O número digitado foi: " + n1 + "<br>");
+
+        let n2 = parseFloat(prompt("Digite outro número:"));
+        document.write("O número digitado foi: " + n2 + "<br>");
+
+        let n3 = parseFloat(prompt("Digite mais um número:"));
+        document.write("O número digitado foi: " + n3 + "<br>");
+
+        let n4 = parseFloat(prompt("Digite o último número:"));
+        document.write("O número digitado foi: " + n4 + "<br>");
+
+        let media = (n1 + n2 + n3 + n4) / 4;
+        document.write("<br> A média dos números digitados é: " + media + "<br>");  
+
+        if(media >= 7){
+            alert("Aprovado!");
+        } else if(media >= 5){
+            alert("Recuperação!");
+        } else {
+            alert("Reprovado!");
+        }
+    </script>
+</body>
+</html>

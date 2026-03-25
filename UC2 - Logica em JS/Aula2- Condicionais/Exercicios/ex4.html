@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <h1>Exercicio 4</h1>
+    <script>
+        let num = [];
+        for(let i = 0; i < 3; i++){
+            num[i] = parseFloat(prompt("Digite o número " + (i + 1) + ":"));
+        }
+
+        num.sort(function(a, b){return b - a});
+        alert("Números em ordem decrescente: " + num[0] + ", " + num[1] + ", " + num[2]);
+    </script>
+</body>
+</html>

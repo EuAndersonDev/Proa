@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 23</title>
+</head>
+<body>
+    <h1>Exercicio 23</h1>
+    <script>
+        let count1 = 0;
+        let count2 = 0;
+        let count3 = 0;
+
+        for(let i = 0; i < 20; i++){
+            let n = parseInt(prompt("Digite um número inteiro:"));
+            if(n > 0 && n <100){
+                count1++;
+            } else if(n > 100 && n < 200){
+                count2++;
+            }else if(n > 200 ){
+                count3++;
+            } else{
+                alert("Número inválido, digite um número inteiro maior que 0");
+            }
+
+        }
+        document.write("A quantidade de números digitados é maior que 0 e menor que 100: " + count1 + "<br>");
+        document.write("A quantidade de números digitados é maior que 100 e menor que 200: " + count2 + "<br>");
+        document.write("A quantidade de números digitados é maior que 200: " + count3 + "<br>");
+    </script>
+</body>
+</html>

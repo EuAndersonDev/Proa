@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <h1>Exercicio 3</h1>
+    <script>
+        let sM = parseFloat(prompt("Digite o salário mensal:"));
+        let valorCredito = 0;
+        if(sM > 0 && sM <= 500){
+            valorCredito = 0;
+        } else if(sM > 500 && sM <= 1000){
+            valorCredito = sM * 0.3;
+        } else if(sM > 1000 && sM <= 3000){
+            valorCredito = sM * 0.4;
+        } else if(sM > 3000){
+            valorCredito = sM * 0.5;
+        } else {
+            alert("Salário inválido.");
+        }
+
+        alert("Valor do crédito: " + valorCredito.toFixed(2));
+    </script>
+</body>
+</html>

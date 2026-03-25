@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 1</title>
+  </head>
+  <body>
+    <h1>Exercicio 1 - Calorias da Refeicao</h1>
+
+    <p>
+      <strong>Prato:</strong> 1 - Vegetariano, 2 - Peixe, 3 - Frango, 4 - Carne
+    </p>
+    <p>
+      <strong>Sobremesa:</strong> 1 - Abacaxi, 2 - Sorvete diet, 3 - Mousse
+      diet, 4 - Mousse chocolate
+    </p>
+    <p>
+      <strong>Bebida:</strong> 1 - Cha, 2 - Suco de laranja, 3 - Suco de melao,
+      4 - Refrigerante diet
+    </p>
+
+    <label for="prato">Prato (1 a 4): </label>
+    <input type="number" id="prato" min="1" max="4" />
+    <br /><br />
+
+    <label for="sobremesa">Sobremesa (1 a 4): </label>
+    <input type="number" id="sobremesa" min="1" max="4" />
+    <br /><br />
+
+    <label for="bebida">Bebida (1 a 4): </label>
+    <input type="number" id="bebida" min="1" max="4" />
+    <br /><br />
+
+    <button onclick="calcularCalorias()">Calcular calorias</button>
+
+    <h2 id="resultado"></h2>
+
+    <script>
+      function caloriasPrato(opcao) {
+        switch (opcao) {
+          case 1:
+            return 180;
+          case 2:
+            return 230;
+          case 3:
+            return 250;
+          case 4:
+            return 350;
+          default:
+            return null;
+        }
+      }
+
+      function caloriasSobremesa(opcao) {
+        switch (opcao) {
+          case 1:
+            return 75;
+          case 2:
+            return 110;
+          case 3:
+            return 170;
+          case 4:
+            return 200;
+          default:
+            return null;
+        }
+      }
+
+      function caloriasBebida(opcao) {
+        switch (opcao) {
+          case 1:
+            return 20;
+          case 2:
+            return 70;
+          case 3:
+            return 100;
+          case 4:
+            return 65;
+          default:
+            return null;
+        }
+      }
+
+      function calcularCalorias() {
+        var prato = Number(document.getElementById("prato").value);
+        var sobremesa = Number(document.getElementById("sobremesa").value);
+        var bebida = Number(document.getElementById("bebida").value);
+
+        var caloriasDoPrato = caloriasPrato(prato);
+        var caloriasDaSobremesa = caloriasSobremesa(sobremesa);
+        var caloriasDaBebida = caloriasBebida(bebida);
+
+        if (
+          caloriasDoPrato === null ||
+          caloriasDaSobremesa === null ||
+          caloriasDaBebida === null
+        ) {
+          document.getElementById("resultado").textContent =
+            "Informe valores validos de 1 a 4 para todas as opcoes.";
+          return;
+        }
+
+        var total = caloriasDoPrato + caloriasDaSobremesa + caloriasDaBebida;
+        document.getElementById("resultado").textContent =
+          "Total de calorias da refeicao: " + total + " calorias.";
+      }
+    </script>
+  </body>
+</html>

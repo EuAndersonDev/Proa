@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semafaro</title>
+</head>
+<body>
+    <h1>Semafaro</h1>
+
+    <script>
+        let cor = prompt("Digite a cor do semáforo (vermelho, amarelo ou verde):").toLowerCase();
+
+        if(cor === "vermelho"){
+            alert("Pare!");
+        } else if(cor === "amarelo"){
+            alert("Atenção!");
+        } else if(cor === "verde"){
+            alert("Siga!");
+        } else {
+            alert("Cor inválida! Por favor, digite vermelho, amarelo ou verde.");
+        }
+    </script>
+</body>
+</html>

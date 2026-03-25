@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <h1>Exercicio 2</h1>
+    <script>
+        let n = parseInt(prompt("Digite um numero inteiro: "));
+        function divisiveis10(n){
+            if (n % 10 == 0){
+                return "O numero é divisivel por 10";
+            } else {
+                return "O numero não é divisivel por 10";
+            }
+        }
+        function divisiveis5(n){
+            if (n % 5 == 0){
+                return "O numero é divisivel por 5";
+            } else {
+                return "O numero não é divisivel por 5";
+            }
+        }
+        function divisiveis2(n){
+            if (n % 2 == 0){
+                return "O numero é divisivel por 2";
+            } else {
+                return "O numero não é divisivel por 2";
+            }
+        }
+        document.write("Esse numero é " + divisiveis10(n));
+        document.write("<br> Esse numero é " + divisiveis5(n));
+        document.write("<br> Esse numero é " + divisiveis2(n));
+    
+    </script>
+</body>
+</html>
