@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 11</title>
+  </head>
+  <body>
+    <h1>Exercicio 11</h1>
+    <script>
+      const valores = [];
+      let dentroIntervalo = 0;
+      let foraIntervalo = 0;
+
+      for (let i = 1; i <= 10; i++) {
+        let valor = parseInt(prompt("Digite o " + i + " valor:"));
+        valores.push(valor);
+
+        if (valor >= 24 && valor <= 42) {
+          dentroIntervalo++;
+        } else {
+          foraIntervalo++;
+        }
+      }
+
+      
+      document.write(
+        "Quantidade entre 24 e 42 (inclusive): " + dentroIntervalo + "<br>",
+      );
+      document.write("Quantidade fora do intervalo: " + foraIntervalo);
+    </script>
+  </body>
+</html>

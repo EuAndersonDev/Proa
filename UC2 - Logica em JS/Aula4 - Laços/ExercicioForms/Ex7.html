@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    <h1>Exercicio 7</h1>
+    <script>
+        while(true){
+            let nota1 = parseFloat(prompt("Digite a primeira nota:"));
+            let nota2 = parseFloat(prompt("Digite a segunda nota:"));
+            let nota3 = parseFloat(prompt("Digite a terceira nota:"));
+            let nota4 = parseFloat(prompt("Digite a quarta nota:"));
+            let nota5 = parseFloat(prompt("Digite a quinta nota:"));
+            let nota6 = parseFloat(prompt("Digite a sexta nota:"));
+            if(isNaN(nota1) || isNaN(nota2) || isNaN(nota3) || isNaN(nota4) || isNaN(nota5) || isNaN(nota6)){
+                document.write("Por favor, digite apenas números válidos.<br>");
+                continue;
+            }
+            document.write("A media das notas é: " + (nota1 + nota2 + nota3 + nota4 + nota5 + nota6) / 6);
+        }
+    </script>
+</body>
+</html>
