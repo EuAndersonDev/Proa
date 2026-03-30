@@ -9,16 +9,15 @@
     <h1>Exercicio 4</h1>
     <script>
       let soma = 0;
-      let quantidade = 0;
+      let quantidade = 85;
 
       for (let i = 15; i <= 100; i++) {
         soma += i;
-        quantidade++;
       }
 
-      const media = soma / quantidade;
+      let media = soma / quantidade;
       document.write(
-        "A média aritmética dos números inteiros entre 15 e 100 é: " + media,
+        "A média aritmética dos números inteiros entre 15 e 100 é: " + media.toFixed(2),
       );
     </script>
   </body>
