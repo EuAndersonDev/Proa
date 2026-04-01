@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu BK - Pedido Confirmado</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5ebdc; 
+            color: #502314; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+            border: 2px solid #e11b22; 
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        h2 { color: #e11b22; margin-top: 0; }
+        .preco { font-weight: bold; font-size: 1.4em; color: #2d8a2d; }
+        .ingredientes { font-style: italic; font-size: 0.9em; margin-top: 10px; }
+        .erro { color: #e11b22; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <script>
+        let lanche = prompt("Digite o número do lanche:\n1. Whopper\n2. BK Stacker Duplo\n3. Big King\n4. Whopper de Plantas\n5. Chicken Crispy");
+
+        let nome, preco, ingredientes, imagem;
+
+        switch (lanche) {
+            case "1":
+                nome = "Whopper";
+                preco = "R$ 32,90";
+                ingredientes = "Pão com gergelim, carne grelhada, queijo, picles, alface, tomate, cebola, maionese e ketchup.";
+                imagem = "https://d3sn2rlrwxy0ce.cloudfront.net/site-BK_Taste_3.0_mais_molho_new.png?mtime=20250110155510&focal=none";
+                break;
+            case "2":
+                nome = "BK Stacker Duplo";
+                preco = "R$ 35,90";
+                ingredientes = "Duas carnes grelhadas, muito bacon, queijo cheddar e molho Stacker.";
+                imagem = "https://d3sn2rlrwxy0ce.cloudfront.net/site-BK_Taste_3.0_mais_molho_new.png?mtime=20250110155510&focal=none";
+                break;
+            case "3":
+                nome = "Big King";
+                preco = "R$ 29,90";
+                ingredientes = "Duas carnes, molho especial, queijo, picles, alface e cebola.";
+                imagem = "https://d3sn2rlrwxy0ce.cloudfront.net/site-BK_Taste_3.0_mais_molho_new.png?mtime=20250110155510&focal=none";
+                break;
+            case "4":
+                nome = "Whopper de Plantas";
+                preco = "R$ 33,90";
+                ingredientes = "Hambúrguer 100% vegetal, alface, tomate, cebola, picles e maionese.";
+                imagem = "https://d3sn2rlrwxy0ce.cloudfront.net/site-BK_Taste_3.0_mais_molho_new.png?mtime=20250110155510&focal=none";
+                break;
+            case "5":
+                nome = "Chicken Crispy";
+                preco = "R$ 28,90";
+                ingredientes = "Frango empanado crocante, maionese e alface no pão brioche.";
+                imagem = "https://d3sn2rlrwxy0ce.cloudfront.net/site-BK_Taste_3.0_mais_molho_new.png?mtime=20250110155510&focal=none";
+                break;
+            default:
+                nome = null;
+        }
+
+        if (nome) {
+            document.write(`
+                <div class="card">
+                    <img src="${imagem}" alt="${nome}">
+                    <h2>${nome}</h2>
+                    <p class="preco">${preco}</p>
+                    <p class="ingredientes"><strong>Ingredientes:</strong><br>${ingredientes}</p>
+                </div>
+            `);
+        } else {
+            document.write(`
+                <div class="card">
+                    <p>Por favor, recarregue a página e escolha um número de 1 a 5.</p>
+                </div>
+            `);
+        }
+    </script>
+
+</body>
+</html>
