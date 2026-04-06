@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 45</title>
+  </head>
+  <body>
+    <h1>
+      Crie um programa que leia o nome e a idade de varias pessoas usando o loop
+      "for" ate que o nome "fim" seja informado. Ao final, exiba a media das
+      idades.
+    </h1>
+    <script>
+      let somaIdades = 0;
+      let contador = 0;
+
+      for (;;) {
+        let nome = prompt("Digite o nome da pessoa (ou 'fim' para encerrar):");
+        if (nome.toLowerCase() === "fim") {
+          break;
+        }
+
+        let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+        somaIdades += idade;
+        contador++;
+      }
+
+      if (contador > 0) {
+        let mediaIdades = somaIdades / contador;
+        document.write("A media das idades e: " + mediaIdades);
+      } else {
+        document.write("Nenhuma pessoa foi cadastrada.");
+      }
+    </script>
+  </body>
+</html>

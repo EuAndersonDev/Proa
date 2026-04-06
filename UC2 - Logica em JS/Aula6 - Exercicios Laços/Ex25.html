@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 25</title>
+  </head>
+  <body>
+    <h1>
+      Faca um programa que exiba os primeiros 20 numeros da sequencia de
+      Fibonacci usando o loop "do...while".
+    </h1>
+    <script>
+      let a = 0;
+      let b = 1;
+      let i = 0;
+
+      do {
+        document.write(a + "<br>");
+        let temp = a + b;
+        a = b;
+        b = temp;
+        i++;
+      } while (i < 20);
+    </script>
+  </body>
+</html>
