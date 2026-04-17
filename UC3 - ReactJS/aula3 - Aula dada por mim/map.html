@@ -1,0 +1,23 @@
+<script>
+// const pessoas = [
+//   { nome: "Ana",    idade: 20 },
+//   { nome: "Carlos", idade: 25 },
+//   { nome: "Bia",    idade: 17 }
+// ];
+
+
+// function mostrarNomes(lista) {
+//   const nomes = lista.map(p => p.nome);
+
+//   nomes.forEach(nome => console.log(nome));
+// }
+// mostrarNomes(pessoas);
+
+
+const valores = ["maçã", "banana", "maçã", "laranja", "banana"];
+const unicos = valores.filter((item, index) => {
+  return valores.indexOf(item) === index;
+});
+
+
+</script>

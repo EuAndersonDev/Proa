@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fibonacci Recursivo</title>
+  </head>
+  <body>
+    <script>
+      function fibonacci(n) {
+        if (n === 0) return 0; 
+        if (n === 1) return 1; 
+        
+
+        return fibonacci(n - 1) + fibonacci(n - 2);
+      }
+
+      let termo = parseInt(prompt("Qual termo da sequência de Fibonacci você deseja ver?"));
+      
+      let resultado = fibonacci(termo);
+      
+      document.write("O " + termo + "º termo da sequência é: " + resultado);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zero para Cancelar</title>
+  </head>
+  <body>
+    <h1>Resultado da Soma (Zero para Cancelar)</h1>
+    <script>
+      // Lê a quantidade de números que o chefe vai falar
+      let n = parseInt(prompt("Digite a quantidade de números (N):"));
+      
+      let listaDeVendas = [];
+
+      // Loop para ler cada um dos N números
+      for (let i = 0; i < n; i++) {
+        let x = parseInt(prompt("Digite o número falado:"));
+
+        if (x === 0) {
+          // Se for zero, remove o último elemento adicionado
+          listaDeVendas.pop();
+        } else {
+          // Se não for zero, adiciona o número ao final da lista
+          listaDeVendas.push(x);
+        }
+      }
+
+      // Calcula a soma dos números que restaram na lista
+      let somaTotal = 0;
+      for (let j = 0; j < listaDeVendas.length; j++) {
+        somaTotal += listaDeVendas[j];
+      }
+
+      // Exibe o resultado final
+      document.write("Soma total: " + somaTotal);
+    </script>
+  </body>
+</html>

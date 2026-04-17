@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Busca Simples no Vetor 02</title>
+  </head>
+  <body>
+    <h1>Busca Simples no Vetor 02</h1>
+    <script>
+      // Lê a primeira linha com os 10 números
+      // O prompt recebe uma string, o split(' ') transforma em array
+      let entradaVetor = prompt("Digite os 10 valores inteiros separados por espaço:");
+      let valores = entradaVetor.split(" ");
+      
+      // Lê o valor X a ser buscado
+      let x = prompt("Digite o valor X a ser buscado:");
+      
+      let indices = [];
+      let contador = 0;
+
+      // Percorre o vetor de 10 posições
+      for (let i = 0; i < 10; i++) {
+        // Comparamos o valor (convertendo para Number para garantir)
+        if (Number(valores[i]) === Number(x)) {
+          indices.push(i);
+          contador++;
+        }
+      }
+
+      // Lógica de saída
+      if (contador > 0) {
+        // Imprime a quantidade
+        document.write(contador + "<br>");
+        // Imprime os índices separados por espaço
+        document.write(indices.join(" ") + "<br>");
+      } else {
+        // Caso não encontre nada
+        document.write("Mia x");
+      }
+    </script>
+  </body>
+</html>

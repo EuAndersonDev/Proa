@@ -13,8 +13,11 @@
     <script>
       let numero = parseInt(prompt("Digite um número inteiro positivo:"));
       let i = 1;
-      while (i <= numero) {
-        if (numero % i === 0) {
+      while (i <= numero) { 
+
+        let res = numero % i;
+
+        if (res === 0) {
           document.write(i + "<br>");
         }
         i++;
