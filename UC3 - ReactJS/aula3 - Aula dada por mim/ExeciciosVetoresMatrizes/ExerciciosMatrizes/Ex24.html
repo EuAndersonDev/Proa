@@ -1,0 +1,34 @@
+<script>
+    //24) Crie um programa que leia uma matriz 3x3 de números inteiros e verifique se ela é simétrica (igual à sua transposta).
+
+    let n=3,m=3;
+    let matriz = [];
+    for(let i=0; i<n; i++){
+        let valor = parseInt(prompt(`Digite o valor da linha ${i+1}`));
+        matriz[i] = [valor];
+
+        for(let j=0; j<m; j++){
+            valor = parseInt(prompt(`Digite o valor da coluna ${j+1}`));
+            matriz[i][j] = valor;
+        }
+    }
+
+    let simetrica = true;
+    for(let i=0; i<n; i++){
+        for(let j=0; j<m; j++){
+            if(matriz[i][j] !== matriz[j][i]){
+                simetrica = false;
+                break;
+            }
+        }
+        if(!simetrica){
+            break;
+        }
+    }
+    if(simetrica){
+        console.log("A matriz é simétrica.");
+    } else {
+        console.log("A matriz não é simétrica.");
+    }
+    
+</script>

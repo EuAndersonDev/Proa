@@ -1,0 +1,14 @@
+<script>
+    let lista = [];
+    let countP = 0;
+    let countN = 0;
+    for(let i=0; i<7; i++){
+        let valor = prompt(`Digite o valor ${i+1}:`);
+        lista.push(valor);
+
+        if(Number(valor)>0)countP++;
+        else if(Number(valor)<0)countN++;
+    }
+    console.log(`A quantidade de números positivos é: ${countP}`);
+    console.log(`A quantidade de números negativos é: ${countN}`);
+</script>

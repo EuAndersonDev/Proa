@@ -1,0 +1,9 @@
+<script>
+    let lista = [];
+    for(let i=0; i<5; i++){
+        let valor = prompt(`Digite o valor ${i+1}:`);
+        lista.push(valor);
+    }
+    lista.sort((a, b) => a - b);
+    console.log(`Os valores em ordem crescente são: ${lista.join(', ')}`);
+</script>

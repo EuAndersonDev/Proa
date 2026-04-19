@@ -1,0 +1,15 @@
+<script>
+    //Apresente o maior elemento da matriz 3x3.
+    let n=3,m=3;
+    let matriz = [];
+    for(let i=0; i<n; i++){
+        let valor = parseInt(prompt(`Digite o valor da linha ${i+1}`));
+        matriz[i] = [valor];
+
+        for(let j=0; j<m; j++){
+            valor = parseInt(prompt(`Digite o valor da coluna ${j+1}`));
+            matriz[i][j] = valor;
+        }
+    }
+    console.log("Maior elemento da matriz: " + Math.max(...matriz[0]), Math.max(...matriz[1]), Math.max(...matriz[2]));
+</script>

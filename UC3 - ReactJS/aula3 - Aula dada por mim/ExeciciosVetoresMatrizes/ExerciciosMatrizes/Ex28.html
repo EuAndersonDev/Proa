@@ -1,0 +1,19 @@
+<script>
+    //28)Faça um programa que leia uma matriz 4x4 de números inteiros e exiba o maior valor presente em cada linha.
+    let n=4,m=4;
+    let matriz = [];
+    for(let i=0; i<n; i++){
+        let valor = parseInt(prompt(`Digite o valor da linha ${i+1}`));
+        matriz[i] = [valor];
+
+        for(let j=0; j<m; j++){
+            valor = parseInt(prompt(`Digite o valor da coluna ${j+1}`));
+            matriz[i][j] = valor;
+        }
+    }
+    console.log("Maior valor presente em cada linha:");
+    for(let i=0; i<n; i++){
+        console.log(`Linha ${i+1}: ${Math.max(...matriz[i])}`);
+    }
+    
+</script>

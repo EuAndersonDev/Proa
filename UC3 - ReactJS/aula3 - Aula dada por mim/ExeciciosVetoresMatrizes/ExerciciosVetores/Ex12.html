@@ -1,0 +1,12 @@
+<script>
+    let lista = [];
+
+    for(let i=0; i<5; i++){
+        let valor = prompt(`Digite o valor ${i+1}:`);
+        lista.push(valor);
+    }
+
+    console.log("Valores decrescentes:");
+    lista.sort((a, b) => Number(b) - Number(a));
+    console.log(lista);
+</script>

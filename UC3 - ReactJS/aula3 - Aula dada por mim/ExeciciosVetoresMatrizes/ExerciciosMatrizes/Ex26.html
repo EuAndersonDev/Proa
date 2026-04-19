@@ -1,0 +1,41 @@
+<script>
+    //26) Escreva um programa que leia duas matrizes 2x2 de números inteiros e verifique se elas são iguais.
+    let n=2,m=2;
+    let matrizA = [];
+    let matrizB = [];
+    for(let i=0; i<n; i++){
+        let valor = parseInt(prompt(`Digite o valor da linha ${i+1} da matriz A`));
+        matrizA[i] = [valor];
+
+        for(let j=0; j<m; j++){
+            valor = parseInt(prompt(`Digite o valor da coluna ${j+1} da matriz A`));
+            matrizA[i][j] = valor;
+        }
+    }
+    for(let i=0; i<n; i++){
+        let valor = parseInt(prompt(`Digite o valor da linha ${i+1} da matriz B`));
+        matrizB[i] = [valor];
+
+        for(let j=0; j<m; j++){
+            valor = parseInt(prompt(`Digite o valor da coluna ${j+1} da matriz B`));
+            matrizB[i][j] = valor;
+        }
+    }
+    let iguais = true;
+    for(let i=0; i<n; i++){
+        for(let j=0; j<m; j++){
+            if(matrizA[i][j] !== matrizB[i][j]){
+                iguais = false;
+                break;
+            }
+        }
+        if(!iguais){
+            break;
+        }
+    }
+    if(iguais){
+        console.log("As matrizes A e B são iguais.");
+    } else {
+        console.log("As matrizes A e B não são iguais.");
+    }
+</script>

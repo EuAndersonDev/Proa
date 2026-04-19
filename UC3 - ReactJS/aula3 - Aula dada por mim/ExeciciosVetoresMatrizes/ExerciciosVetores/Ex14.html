@@ -1,0 +1,10 @@
+<script>
+    let lista = [];
+    let pares = [];
+    for(let i=0; i<5; i++){
+        let valor = prompt(`Digite o valor ${i+1}:`);
+        lista.push(valor);
+        if(Number(valor) % 2 ==0) pares.push(valor);
+    }
+    console.log(`Números pares: ${pares.join(', ')}`);
+</script>

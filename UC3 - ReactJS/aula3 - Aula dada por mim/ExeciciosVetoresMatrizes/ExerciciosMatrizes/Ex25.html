@@ -1,0 +1,27 @@
+<script>
+    //25) Faça um programa que leia uma matriz 4x4 de números inteiros e exiba a soma dos elementos de cada coluna.
+    let n=4,m=4;
+    let matriz = [];
+    for(let i=0; i<n; i++){
+        let valor = parseInt(prompt(`Digite o valor da linha ${i+1}`));
+        matriz[i] = [valor];
+
+        for(let j=0; j<m; j++){
+            valor = parseInt(prompt(`Digite o valor da coluna ${j+1}`));
+            matriz[i][j] = valor;
+        }
+    }
+    let somaColunas = [];
+    for(let j=0; j<m; j++){
+        let soma = 0;
+        for(let i=0; i<n; i++){
+            soma += matriz[i][j];
+        }
+        somaColunas[j] = soma;
+    }
+    console.log("Soma dos elementos de cada coluna:");
+    for(let j=0; j<m; j++){
+        console.log(`Coluna ${j+1}: ${somaColunas[j]}`);
+    }
+    
+</script>

@@ -1,0 +1,12 @@
+<script>
+    let lista = [];
+    let count = 0;
+    for(let i=0; i<5; i++){
+        let valor = prompt(`Digite o valor ${i+1}:`);
+        lista.push(valor);
+        if(Number(valor) % 2 === 0){
+            count++;
+        }
+    }
+    console.log(`A quantidade de números pares é: ${count}`);
+</script>

@@ -1,0 +1,11 @@
+<script>
+    let lista = [];
+    
+    for(let i=0; i<5; i++){
+        let valor = prompt(`Digite o valor ${i+1}:`);
+        lista.push(valor);
+    }
+
+    let intervalo = lista.filter(valor => Number(valor) >= 10 && Number(valor) <= 50);
+    console.log(`Valores entre 10 e 50: ${intervalo.join(', ')}`);
+</script>

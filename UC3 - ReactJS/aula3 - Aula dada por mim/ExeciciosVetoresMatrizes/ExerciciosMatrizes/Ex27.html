@@ -1,0 +1,20 @@
+<script>
+    //27) Crie um programa que leia uma matriz 3x3 de números inteiros e exiba o produto dos elementos da diagonal secundária.
+
+    let n=3,m=3;
+    let matriz = [];
+    for(let i=0; i<n; i++){
+        let valor = parseInt(prompt(`Digite o valor da linha ${i+1}`));
+        matriz[i] = [valor];
+
+        for(let j=0; j<m; j++){
+            valor = parseInt(prompt(`Digite o valor da coluna ${j+1}`));
+            matriz[i][j] = valor;
+        }
+    }
+    let produtoDiagonalSecundaria = 1;
+    for(let i=0; i<n; i++){
+        produtoDiagonalSecundaria *= matriz[i][m - 1 - i];
+    }
+    console.log("Produto dos elementos da diagonal secundária: " + produtoDiagonalSecundaria);
+</script>

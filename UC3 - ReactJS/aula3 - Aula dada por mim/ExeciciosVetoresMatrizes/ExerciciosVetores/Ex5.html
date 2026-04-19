@@ -1,0 +1,14 @@
+<script>
+    let lista = [];
+    let soma = 0;
+    for(let i=0; i<5; i++){
+        let valor = prompt(`Digite o valor ${i+1}:`);
+        lista.push(valor);
+    }
+
+    Math.max(...lista);
+    console.log(`O maior valor é: ${Math.max(...lista)}`);
+    Math.min(...lista);
+    console.log(`O menor valor é: ${Math.min(...lista)}`);
+    
+</script>

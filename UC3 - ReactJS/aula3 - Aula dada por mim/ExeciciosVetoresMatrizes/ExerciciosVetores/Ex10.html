@@ -1,0 +1,14 @@
+<script>
+    let lista = [];
+    let isZero = false;
+    for(let i=0; i<5; i++){
+        let valor = prompt(`Digite o valor ${i+1}:`);
+        lista.push(valor);
+        if(Number(valor) === 0){
+            isZero = true;
+        }
+    }
+    console.log("Existe numero zero na lista? " + (isZero ? "Sim" : "Não"));
+    console.log(`A quantidade de números positivos é: ${isZero ? 0 : lista.filter(num => Number(num) > 0).length}`);
+
+</script>

@@ -1,0 +1,17 @@
+<script>
+    let n=2,m=2;
+    let matriz = [];
+    let soma = 0;
+    for(let i=0; i<n; i++){
+        let valor = parseInt(prompt(`Digite o valor da linha ${i+1}`));
+        matriz[i] = [valor];
+
+        for(let j=0; j<m; j++){
+            valor = parseInt(prompt(`Digite o valor da coluna ${j+1}`));
+            matriz[i][j] = valor;
+        }
+        soma += matriz[i][0] + matriz[i][1];
+    }
+    console.log(matriz);
+    console.log("Soma dos elementos da matriz: " + soma);
+</script>

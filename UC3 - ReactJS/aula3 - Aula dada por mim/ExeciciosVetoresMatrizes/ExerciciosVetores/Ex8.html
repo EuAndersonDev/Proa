@@ -1,0 +1,12 @@
+<script>
+    let lista = [];
+    for(let i=0; i<10; i++){
+        let valor = prompt(`Digite o valor ${i+1}:`);
+        lista.push(valor);
+    }
+    let mediaPares = lista.filter(num => Number(num) % 2 === 0).reduce((acc, num) => acc + Number(num), 0) / lista.filter(num => Number(num) % 2 === 0).length;
+    console.log(`A média dos números pares é: ${mediaPares}`);
+
+    let mediaImpares = lista.filter(num => Number(num) % 2 !== 0).reduce((acc, num) => acc + Number(num), 0) / lista.filter(num => Number(num) % 2 !== 0).length;
+    console.log(`A média dos números ímpares é: ${mediaImpares}`);
+</script>
