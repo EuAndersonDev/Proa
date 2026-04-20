@@ -1,16 +1,30 @@
-<script>
+﻿<script>
+    // Declara uma variavel para uso no exercicio.
     let lista = [];
+    // Declara uma variavel para uso no exercicio.
     let somaP = 0;
+    // Declara uma variavel para uso no exercicio.
     let somaN = 0;
+    // Inicia um laco de repeticao.
     for(let i=0; i<5; i++){
+        // Declara uma variavel para uso no exercicio.
         let valor = prompt(`Digite o valor ${i+1}:`);
+        // Adiciona um item no vetor.
         lista.push(valor);
+        // Verifica uma condicao para decidir o fluxo.
         if(Number(valor) > 0){
+            // Converte o valor para numero.
             somaP += Number(valor);
+        // Fecha o bloco anterior e inicia uma nova condicao else if.
         } else if(Number(valor) < 0){
+            // Converte o valor para numero.
             somaN += Number(valor);
+        // Fecha um bloco de codigo.
         }
+    // Fecha um bloco de codigo.
     }
-    console.log(`A soma dos números positivos é: ${somaP}`);
-    console.log(`A soma dos números negativos é: ${somaN}`);
+    // Exibe informacoes no console.
+    console.log(`A soma dos nÃºmeros positivos Ã©: ${somaP}`);
+    // Exibe informacoes no console.
+    console.log(`A soma dos nÃºmeros negativos Ã©: ${somaN}`);
 </script>

@@ -1,10 +1,18 @@
-<script>
+﻿<script>
+    // Declara uma variavel para uso no exercicio.
     let lista = [];
+    // Declara uma variavel para uso no exercicio.
     let pares = [];
+    // Inicia um laco de repeticao.
     for(let i=0; i<5; i++){
+        // Declara uma variavel para uso no exercicio.
         let valor = prompt(`Digite o valor ${i+1}:`);
+        // Adiciona um item no vetor.
         lista.push(valor);
+        // Verifica uma condicao para decidir o fluxo.
         if(Number(valor) % 2 ==0) pares.push(valor);
+    // Fecha um bloco de codigo.
     }
-    console.log(`Números pares: ${pares.join(', ')}`);
+    // Exibe informacoes no console.
+    console.log(`NÃºmeros pares: ${pares.join(', ')}`);
 </script>

@@ -1,11 +1,18 @@
-<script>
+﻿<script>
+    // Declara uma variavel para uso no exercicio.
     let lista = [];
     
+    // Inicia um laco de repeticao.
     for(let i=0; i<5; i++){
+        // Declara uma variavel para uso no exercicio.
         let valor = prompt(`Digite o valor ${i+1}:`);
+        // Adiciona um item no vetor.
         lista.push(valor);
+    // Fecha um bloco de codigo.
     }
 
+    // Declara uma variavel para uso no exercicio.
     let intervalo = lista.filter(valor => Number(valor) >= 10 && Number(valor) <= 50);
+    // Exibe informacoes no console.
     console.log(`Valores entre 10 e 50: ${intervalo.join(', ')}`);
 </script>

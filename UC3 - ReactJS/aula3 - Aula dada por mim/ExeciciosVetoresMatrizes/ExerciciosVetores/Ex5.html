@@ -1,14 +1,24 @@
-<script>
+﻿<script>
+    // Declara uma variavel para uso no exercicio.
     let lista = [];
+    // Declara uma variavel para uso no exercicio.
     let soma = 0;
+    // Inicia um laco de repeticao.
     for(let i=0; i<5; i++){
+        // Declara uma variavel para uso no exercicio.
         let valor = prompt(`Digite o valor ${i+1}:`);
+        // Adiciona um item no vetor.
         lista.push(valor);
+    // Fecha um bloco de codigo.
     }
 
+    // Calcula o maior valor entre os elementos.
     Math.max(...lista);
-    console.log(`O maior valor é: ${Math.max(...lista)}`);
+    // Calcula o maior valor entre os elementos.
+    console.log(`O maior valor Ã©: ${Math.max(...lista)}`);
+    // Calcula o menor valor entre os elementos.
     Math.min(...lista);
-    console.log(`O menor valor é: ${Math.min(...lista)}`);
+    // Calcula o menor valor entre os elementos.
+    console.log(`O menor valor Ã©: ${Math.min(...lista)}`);
     
 </script>

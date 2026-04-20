@@ -1,34 +1,61 @@
-<script>
-    //24) Crie um programa que leia uma matriz 3x3 de números inteiros e verifique se ela é simétrica (igual à sua transposta).
+﻿<script>
+    //24) Crie um programa que leia uma matriz 3x3 de nÃºmeros inteiros e verifique se ela Ã© simÃ©trica (igual Ã  sua transposta).
 
+    // Declara uma variavel para uso no exercicio.
     let n=3,m=3;
+    // Declara uma variavel para uso no exercicio.
     let matriz = [];
+    // Inicia um laco de repeticao.
     for(let i=0; i<n; i++){
+        // Declara uma variavel para uso no exercicio.
         let valor = parseInt(prompt(`Digite o valor da linha ${i+1}`));
+        // Executa esta instrucao do exercicio.
         matriz[i] = [valor];
 
+        // Inicia um laco de repeticao.
         for(let j=0; j<m; j++){
+            // Solicita um valor digitado pelo usuario.
             valor = parseInt(prompt(`Digite o valor da coluna ${j+1}`));
+            // Executa esta instrucao do exercicio.
             matriz[i][j] = valor;
+        // Fecha um bloco de codigo.
         }
+    // Fecha um bloco de codigo.
     }
 
+    // Declara uma variavel para uso no exercicio.
     let simetrica = true;
+    // Inicia um laco de repeticao.
     for(let i=0; i<n; i++){
+        // Inicia um laco de repeticao.
         for(let j=0; j<m; j++){
+            // Verifica uma condicao para decidir o fluxo.
             if(matriz[i][j] !== matriz[j][i]){
+                // Atribui um valor para a variavel.
                 simetrica = false;
+                // Executa esta instrucao do exercicio.
                 break;
+            // Fecha um bloco de codigo.
             }
+        // Fecha um bloco de codigo.
         }
+        // Verifica uma condicao para decidir o fluxo.
         if(!simetrica){
+            // Executa esta instrucao do exercicio.
             break;
+        // Fecha um bloco de codigo.
         }
+    // Fecha um bloco de codigo.
     }
+    // Verifica uma condicao para decidir o fluxo.
     if(simetrica){
-        console.log("A matriz é simétrica.");
+        // Exibe informacoes no console.
+        console.log("A matriz Ã© simÃ©trica.");
+    // Fecha o bloco anterior e abre o bloco do else.
     } else {
-        console.log("A matriz não é simétrica.");
+        // Exibe informacoes no console.
+        console.log("A matriz nÃ£o Ã© simÃ©trica.");
+    // Fecha um bloco de codigo.
     }
     
 </script>

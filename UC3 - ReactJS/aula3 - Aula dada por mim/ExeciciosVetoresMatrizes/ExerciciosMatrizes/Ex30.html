@@ -1,34 +1,62 @@
-<script>
-    //30) Crie um programa que leia duas matrizes 2x2 de números inteiros e exiba a subtração
+﻿<script>
+    //30) Crie um programa que leia duas matrizes 2x2 de nÃºmeros inteiros e exiba a subtraÃ§Ã£o
+    // Declara uma variavel para uso no exercicio.
     let n=2,m=2;
+    // Declara uma variavel para uso no exercicio.
     let matrizA = [];
+    // Declara uma variavel para uso no exercicio.
     let matrizB = [];
+    // Inicia um laco de repeticao.
     for(let i=0; i<n; i++){
+        // Declara uma variavel para uso no exercicio.
         let valor = parseInt(prompt(`Digite o valor da linha ${i+1} da matriz A`));
+        // Executa esta instrucao do exercicio.
         matrizA[i] = [valor];
 
+        // Inicia um laco de repeticao.
         for(let j=0; j<m; j++){
+            // Solicita um valor digitado pelo usuario.
             valor = parseInt(prompt(`Digite o valor da coluna ${j+1} da matriz A`));
+            // Executa esta instrucao do exercicio.
             matrizA[i][j] = valor;
+        // Fecha um bloco de codigo.
         }
+    // Fecha um bloco de codigo.
     }
+    // Inicia um laco de repeticao.
     for(let i=0; i<n; i++){
+        // Declara uma variavel para uso no exercicio.
         let valor = parseInt(prompt(`Digite o valor da linha ${i+1} da matriz B`));
+        // Executa esta instrucao do exercicio.
         matrizB[i] = [valor];
 
+        // Inicia um laco de repeticao.
         for(let j=0; j<m; j++){
+            // Solicita um valor digitado pelo usuario.
             valor = parseInt(prompt(`Digite o valor da coluna ${j+1} da matriz B`));
+            // Executa esta instrucao do exercicio.
             matrizB[i][j] = valor;
+        // Fecha um bloco de codigo.
         }
+    // Fecha um bloco de codigo.
     }
+    // Declara uma variavel para uso no exercicio.
     let subtracao = [];
+    // Inicia um laco de repeticao.
     for(let i=0; i<n; i++){
+        // Inicializa um vetor vazio.
         subtracao[i] = [];
+        // Inicia um laco de repeticao.
         for(let j=0; j<m; j++){
+            // Executa esta instrucao do exercicio.
             subtracao[i][j] = matrizA[i][j] - matrizB[i][j];
+        // Fecha um bloco de codigo.
         }
+    // Fecha um bloco de codigo.
     }
-    console.log("Subtração das matrizes A e B:");
+    // Exibe informacoes no console.
+    console.log("SubtraÃ§Ã£o das matrizes A e B:");
+    // Exibe informacoes no console.
     console.log(subtracao);
     
 </script>

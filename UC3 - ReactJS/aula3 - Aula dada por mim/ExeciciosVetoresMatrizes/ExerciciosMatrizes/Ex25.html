@@ -1,27 +1,49 @@
-<script>
-    //25) Faça um programa que leia uma matriz 4x4 de números inteiros e exiba a soma dos elementos de cada coluna.
+﻿<script>
+    //25) FaÃ§a um programa que leia uma matriz 4x4 de nÃºmeros inteiros e exiba a soma dos elementos de cada coluna.
+    // Declara uma variavel para uso no exercicio.
     let n=4,m=4;
+    // Declara uma variavel para uso no exercicio.
     let matriz = [];
+    // Inicia um laco de repeticao.
     for(let i=0; i<n; i++){
+        // Declara uma variavel para uso no exercicio.
         let valor = parseInt(prompt(`Digite o valor da linha ${i+1}`));
+        // Executa esta instrucao do exercicio.
         matriz[i] = [valor];
 
+        // Inicia um laco de repeticao.
         for(let j=0; j<m; j++){
+            // Solicita um valor digitado pelo usuario.
             valor = parseInt(prompt(`Digite o valor da coluna ${j+1}`));
+            // Executa esta instrucao do exercicio.
             matriz[i][j] = valor;
+        // Fecha um bloco de codigo.
         }
+    // Fecha um bloco de codigo.
     }
+    // Declara uma variavel para uso no exercicio.
     let somaColunas = [];
+    // Inicia um laco de repeticao.
     for(let j=0; j<m; j++){
+        // Declara uma variavel para uso no exercicio.
         let soma = 0;
+        // Inicia um laco de repeticao.
         for(let i=0; i<n; i++){
+            // Atualiza o valor acumulado da variavel.
             soma += matriz[i][j];
+        // Fecha um bloco de codigo.
         }
+        // Executa esta instrucao do exercicio.
         somaColunas[j] = soma;
+    // Fecha um bloco de codigo.
     }
+    // Exibe informacoes no console.
     console.log("Soma dos elementos de cada coluna:");
+    // Inicia um laco de repeticao.
     for(let j=0; j<m; j++){
+        // Exibe informacoes no console.
         console.log(`Coluna ${j+1}: ${somaColunas[j]}`);
+    // Fecha um bloco de codigo.
     }
     
 </script>

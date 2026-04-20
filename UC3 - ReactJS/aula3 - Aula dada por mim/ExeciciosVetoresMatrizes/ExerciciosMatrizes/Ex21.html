@@ -1,19 +1,33 @@
-<script>
-    //21) Crie um programa que leia uma matriz 4x4 de números inteiros e exiba a média aritmética dos elementos.
+﻿<script>
+    //21) Crie um programa que leia uma matriz 4x4 de nÃºmeros inteiros e exiba a mÃ©dia aritmÃ©tica dos elementos.
+    // Declara uma variavel para uso no exercicio.
     let n=4,m=4;
+    // Declara uma variavel para uso no exercicio.
     let matriz = [];
+    // Declara uma variavel para uso no exercicio.
     let soma = 0;
+    // Inicia um laco de repeticao.
     for(let i=0; i<n; i++){
+        // Declara uma variavel para uso no exercicio.
         let valor = parseInt(prompt(`Digite o valor da linha ${i+1}`));
+        // Executa esta instrucao do exercicio.
         matriz[i] = [valor];
 
+        // Inicia um laco de repeticao.
         for(let j=0; j<m; j++){
+            // Solicita um valor digitado pelo usuario.
             valor = parseInt(prompt(`Digite o valor da coluna ${j+1}`));
+            // Executa esta instrucao do exercicio.
             matriz[i][j] = valor;
+            // Atualiza o valor acumulado da variavel.
             soma += matriz[i][j];
+        // Fecha um bloco de codigo.
         }
+    // Fecha um bloco de codigo.
     }
+    // Declara uma variavel para uso no exercicio.
     let media = soma / (n * m);
-    console.log("Média aritmética dos elementos da matriz: " + media);
+    // Exibe informacoes no console.
+    console.log("MÃ©dia aritmÃ©tica dos elementos da matriz: " + media);
 
 </script>

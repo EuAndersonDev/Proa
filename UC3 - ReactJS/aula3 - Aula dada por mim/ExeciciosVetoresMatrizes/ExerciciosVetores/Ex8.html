@@ -1,12 +1,21 @@
-<script>
+﻿<script>
+    // Declara uma variavel para uso no exercicio.
     let lista = [];
+    // Inicia um laco de repeticao.
     for(let i=0; i<10; i++){
+        // Declara uma variavel para uso no exercicio.
         let valor = prompt(`Digite o valor ${i+1}:`);
+        // Adiciona um item no vetor.
         lista.push(valor);
+    // Fecha um bloco de codigo.
     }
+    // Declara uma variavel para uso no exercicio.
     let mediaPares = lista.filter(num => Number(num) % 2 === 0).reduce((acc, num) => acc + Number(num), 0) / lista.filter(num => Number(num) % 2 === 0).length;
-    console.log(`A média dos números pares é: ${mediaPares}`);
+    // Exibe informacoes no console.
+    console.log(`A mÃ©dia dos nÃºmeros pares Ã©: ${mediaPares}`);
 
+    // Declara uma variavel para uso no exercicio.
     let mediaImpares = lista.filter(num => Number(num) % 2 !== 0).reduce((acc, num) => acc + Number(num), 0) / lista.filter(num => Number(num) % 2 !== 0).length;
-    console.log(`A média dos números ímpares é: ${mediaImpares}`);
+    // Exibe informacoes no console.
+    console.log(`A mÃ©dia dos nÃºmeros Ã­mpares Ã©: ${mediaImpares}`);
 </script>

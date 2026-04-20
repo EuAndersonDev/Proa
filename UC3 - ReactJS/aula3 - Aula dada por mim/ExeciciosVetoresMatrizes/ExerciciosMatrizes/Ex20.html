@@ -1,15 +1,26 @@
-<script>
+﻿<script>
     //Apresente o maior elemento da matriz 3x3.
+    // Declara uma variavel para uso no exercicio.
     let n=3,m=3;
+    // Declara uma variavel para uso no exercicio.
     let matriz = [];
+    // Inicia um laco de repeticao.
     for(let i=0; i<n; i++){
+        // Declara uma variavel para uso no exercicio.
         let valor = parseInt(prompt(`Digite o valor da linha ${i+1}`));
+        // Executa esta instrucao do exercicio.
         matriz[i] = [valor];
 
+        // Inicia um laco de repeticao.
         for(let j=0; j<m; j++){
+            // Solicita um valor digitado pelo usuario.
             valor = parseInt(prompt(`Digite o valor da coluna ${j+1}`));
+            // Executa esta instrucao do exercicio.
             matriz[i][j] = valor;
+        // Fecha um bloco de codigo.
         }
+    // Fecha um bloco de codigo.
     }
+    // Calcula o maior valor entre os elementos.
     console.log("Maior elemento da matriz: " + Math.max(...matriz[0]), Math.max(...matriz[1]), Math.max(...matriz[2]));
 </script>

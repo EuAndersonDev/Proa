@@ -1,32 +1,59 @@
-<script>
-    //29) Escreva um programa que leia uma matriz 3x3 de números inteiros e verifique se ela é uma matriz identidade.
+﻿<script>
+    //29) Escreva um programa que leia uma matriz 3x3 de nÃºmeros inteiros e verifique se ela Ã© uma matriz identidade.
+    // Declara uma variavel para uso no exercicio.
     let n=3,m=3;
+    // Declara uma variavel para uso no exercicio.
     let matriz = [];
+    // Inicia um laco de repeticao.
     for(let i=0; i<n; i++){
+        // Declara uma variavel para uso no exercicio.
         let valor = parseInt(prompt(`Digite o valor da linha ${i+1}`));
+        // Executa esta instrucao do exercicio.
         matriz[i] = [valor];
 
+        // Inicia um laco de repeticao.
         for(let j=0; j<m; j++){
+            // Solicita um valor digitado pelo usuario.
             valor = parseInt(prompt(`Digite o valor da coluna ${j+1}`));
+            // Executa esta instrucao do exercicio.
             matriz[i][j] = valor;
+        // Fecha um bloco de codigo.
         }
+    // Fecha um bloco de codigo.
     }
+    // Declara uma variavel para uso no exercicio.
     let identidade = true;
+    // Inicia um laco de repeticao.
     for(let i=0; i<n; i++){
+        // Inicia um laco de repeticao.
         for(let j=0; j<m; j++){
+            // Verifica uma condicao para decidir o fluxo.
             if((i === j && matriz[i][j] !== 1) || (i !== j && matriz[i][j] !== 0)){
+                // Atribui um valor para a variavel.
                 identidade = false;
+                // Executa esta instrucao do exercicio.
                 break;
+            // Fecha um bloco de codigo.
             }
+        // Fecha um bloco de codigo.
         }
+        // Verifica uma condicao para decidir o fluxo.
         if(!identidade){
+            // Executa esta instrucao do exercicio.
             break;
+        // Fecha um bloco de codigo.
         }
+    // Fecha um bloco de codigo.
     }
+    // Verifica uma condicao para decidir o fluxo.
     if(identidade){
-        console.log("A matriz é uma matriz identidade.");
+        // Exibe informacoes no console.
+        console.log("A matriz Ã© uma matriz identidade.");
+    // Fecha o bloco anterior e abre o bloco do else.
     } else {
-        console.log("A matriz não é uma matriz identidade.");
+        // Exibe informacoes no console.
+        console.log("A matriz nÃ£o Ã© uma matriz identidade.");
+    // Fecha um bloco de codigo.
     }
     
 </script>

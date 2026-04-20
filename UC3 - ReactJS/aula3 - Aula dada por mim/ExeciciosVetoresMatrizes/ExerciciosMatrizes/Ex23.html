@@ -1,24 +1,43 @@
-<script>
-    //23) Escreva um programa que leia uma matriz 3x3 de números inteiros e exiba o menor valor presente na matriz.
+﻿<script>
+    //23) Escreva um programa que leia uma matriz 3x3 de nÃºmeros inteiros e exiba o menor valor presente na matriz.
+    // Declara uma variavel para uso no exercicio.
     let n=3,m=3;
+    // Declara uma variavel para uso no exercicio.
     let matriz = [];
+    // Inicia um laco de repeticao.
     for(let i=0; i<n; i++){
+        // Declara uma variavel para uso no exercicio.
         let valor = parseInt(prompt(`Digite o valor da linha ${i+1}`));
+        // Executa esta instrucao do exercicio.
         matriz[i] = [valor];
 
+        // Inicia um laco de repeticao.
         for(let j=0; j<m; j++){
+            // Solicita um valor digitado pelo usuario.
             valor = parseInt(prompt(`Digite o valor da coluna ${j+1}`));
+            // Executa esta instrucao do exercicio.
             matriz[i][j] = valor;
+        // Fecha um bloco de codigo.
         }
+    // Fecha um bloco de codigo.
     }
+    // Declara uma variavel para uso no exercicio.
     let menor = matriz[0][0];
+    // Inicia um laco de repeticao.
     for(let i=0; i<n; i++){
+        // Inicia um laco de repeticao.
         for(let j=0; j<m; j++){
+            // Verifica uma condicao para decidir o fluxo.
             if(matriz[i][j] < menor){
+                // Atribui um valor para a variavel.
                 menor = matriz[i][j];
+            // Fecha um bloco de codigo.
             }
+        // Fecha um bloco de codigo.
         }
+    // Fecha um bloco de codigo.
     }
+    // Exibe informacoes no console.
     console.log("Menor valor presente na matriz: " + menor);
 
 </script>

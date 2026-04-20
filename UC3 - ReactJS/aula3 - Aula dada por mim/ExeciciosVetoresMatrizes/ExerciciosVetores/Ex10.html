@@ -1,14 +1,25 @@
-<script>
+﻿<script>
+    // Declara uma variavel para uso no exercicio.
     let lista = [];
+    // Declara uma variavel para uso no exercicio.
     let isZero = false;
+    // Inicia um laco de repeticao.
     for(let i=0; i<5; i++){
+        // Declara uma variavel para uso no exercicio.
         let valor = prompt(`Digite o valor ${i+1}:`);
+        // Adiciona um item no vetor.
         lista.push(valor);
+        // Verifica uma condicao para decidir o fluxo.
         if(Number(valor) === 0){
+            // Atribui um valor para a variavel.
             isZero = true;
+        // Fecha um bloco de codigo.
         }
+    // Fecha um bloco de codigo.
     }
-    console.log("Existe numero zero na lista? " + (isZero ? "Sim" : "Não"));
-    console.log(`A quantidade de números positivos é: ${isZero ? 0 : lista.filter(num => Number(num) > 0).length}`);
+    // Exibe informacoes no console.
+    console.log("Existe numero zero na lista? " + (isZero ? "Sim" : "NÃ£o"));
+    // Converte o valor para numero.
+    console.log(`A quantidade de nÃºmeros positivos Ã©: ${isZero ? 0 : lista.filter(num => Number(num) > 0).length}`);
 
 </script>

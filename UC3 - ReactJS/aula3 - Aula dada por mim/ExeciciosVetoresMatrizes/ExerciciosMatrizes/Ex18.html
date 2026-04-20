@@ -1,17 +1,31 @@
-<script>
+﻿<script>
+    // Declara uma variavel para uso no exercicio.
     let n=2,m=2;
+    // Declara uma variavel para uso no exercicio.
     let matriz = [];
+    // Declara uma variavel para uso no exercicio.
     let somaDiagonal = 0;
+    // Inicia um laco de repeticao.
     for(let i=0; i<n; i++){
+        // Declara uma variavel para uso no exercicio.
         let valor = parseInt(prompt(`Digite o valor da linha ${i+1}`));
+        // Executa esta instrucao do exercicio.
         matriz[i] = [valor];
 
+        // Inicia um laco de repeticao.
         for(let j=0; j<m; j++){
+            // Solicita um valor digitado pelo usuario.
             valor = parseInt(prompt(`Digite o valor da coluna ${j+1}`));
+            // Executa esta instrucao do exercicio.
             matriz[i][j] = valor;
+        // Fecha um bloco de codigo.
         }
+        // Atualiza o valor acumulado da variavel.
         somaDiagonal += matriz[i][i];
+    // Fecha um bloco de codigo.
     }
+    // Exibe informacoes no console.
     console.log(matriz);
+    // Exibe informacoes no console.
     console.log("Soma dos elementos da diagonal principal: " + somaDiagonal);
 </script>
