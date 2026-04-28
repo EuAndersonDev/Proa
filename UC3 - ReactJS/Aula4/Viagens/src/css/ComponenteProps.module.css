@@ -1,0 +1,24 @@
+.corpo_texto {
+  position: absolute;
+  width: 450px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #333;
+  padding: 1rem;
+  font-size: 20px;
+  border-radius: 10px;
+  z-index: 3;
+  top: 10%;
+  left: 60%;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  padding: 10px;
+}
+
+.imagem_props {
+  padding: 10px;
+  width: 100px;
+}

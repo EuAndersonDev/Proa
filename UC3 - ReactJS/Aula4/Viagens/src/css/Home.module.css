@@ -1,0 +1,56 @@
+.container_home {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+/* Container */
+
+.container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+
+/* divs */
+
+.cont1,
+.cont2 {
+  width: 50%;
+  height: auto;
+}
+
+.cont1 img {
+  width: 100%;
+  height: 500px;
+}
+
+/* Div 2 */
+
+.cont2 {
+  display: flex;
+  align-items: center;
+}
+
+.texts {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.texts h1 {
+  color: #005884;
+  font-size: 40px;
+  font-family: "Verdana";
+  text-align: center;
+}
+
+.texts h2 {
+  color: #005884;
+  font-size: 20px;
+  font-weight: 200;
+  font-family: "Verdana";
+  text-align: center;
+}
