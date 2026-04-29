@@ -1,0 +1,23 @@
+.panel {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  z-index: 10;
+  width: 260px;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  border: 1px solid #444;
+  padding: 10px;
+  display: grid;
+  gap: 5px;
+  font-size: 12px;
+}
+
+.panel button {
+  border: 0;
+  background: #d32e2e;
+  color: #fff;
+  padding: 7px 8px;
+  cursor: pointer;
+  margin-top: 5px;
+}

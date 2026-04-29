@@ -1,0 +1,54 @@
+.detail {
+  background: rgba(255, 255, 255, 0.96);
+  padding: 22px;
+}
+
+.backButton {
+  border: 0;
+  background: #8c1313;
+  color: #fff;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-bottom: 14px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.content img {
+  width: 44%;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.content article {
+  width: 56%;
+}
+
+.content h1 {
+  margin: 0 0 10px;
+  color: #8c1313;
+  font-size: 34px;
+}
+
+.price {
+  margin: 0 0 10px;
+  color: #a81010;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media (max-width: 850px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .content img,
+  .content article {
+    width: 100%;
+  }
+}

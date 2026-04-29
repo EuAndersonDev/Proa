@@ -1,0 +1,47 @@
+.authPage {
+  max-width: 520px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 24px;
+}
+
+.authPage h1 {
+  margin: 0 0 14px;
+  color: #8c1313;
+  font-size: 34px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form input {
+  border: 1px solid #bbb;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.form button {
+  border: 0;
+  background: #8c1313;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.feedback {
+  margin: 12px 0 0;
+  font-weight: 700;
+  color: #184a16;
+}
+
+.linkBtn {
+  border: 0;
+  background: transparent;
+  color: #8c1313;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}

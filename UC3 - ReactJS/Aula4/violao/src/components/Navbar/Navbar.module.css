@@ -1,0 +1,66 @@
+.hero {
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 16px;
+  border-bottom: 16px solid #a81010;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #bbb;
+  background: #f5f5f5;
+}
+
+.menu a {
+  display: inline-block;
+  border: 0;
+  border-right: 1px solid #ddd;
+  background: #fff;
+  color: #222;
+  padding: 8px 14px;
+  font-size: 13px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu a:last-child {
+  border-right: 0;
+}
+
+.menu a:hover {
+  background: #ececec;
+}
+
+.active {
+  background: #d32e2e;
+  color: #fff;
+}
+
+.userBar {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 6px 10px;
+}
+
+.userBar button {
+  border: 0;
+  background: #d32e2e;
+  color: #fff;
+  padding: 4px 8px;
+  cursor: pointer;
+}

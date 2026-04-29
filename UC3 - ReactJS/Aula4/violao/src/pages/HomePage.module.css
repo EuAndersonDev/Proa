@@ -1,0 +1,105 @@
+.wrapper {
+  display: grid;
+  gap: 22px;
+}
+
+.highlight,
+.location {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  background: #a81010;
+}
+
+.location {
+  background: #9d4a12;
+}
+
+.highlight img,
+.location img {
+  width: 50%;
+  border: 6px solid #c14545;
+}
+
+.textCard {
+  width: 50%;
+  background: #b89090;
+  color: #fff;
+  padding: 18px;
+}
+
+.textCard h2 {
+  margin: 0 0 10px;
+  font-size: 34px;
+}
+
+.textCard p {
+  margin: 8px 0;
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.textCard button {
+  border: 0;
+  background: #fff;
+  color: #8b2310;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.productsGrid {
+  background: #fff;
+  padding: 24px 14px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.product {
+  text-align: center;
+}
+
+.product img {
+  width: 82%;
+}
+
+.product h3 {
+  margin: 10px 0 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.product p {
+  margin: 0;
+  color: #a81010;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.product button {
+  margin-top: 8px;
+  border: 0;
+  background: #8c1313;
+  color: #fff;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 950px) {
+  .highlight,
+  .location {
+    flex-direction: column;
+  }
+
+  .highlight img,
+  .location img,
+  .textCard {
+    width: 100%;
+  }
+
+  .productsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
